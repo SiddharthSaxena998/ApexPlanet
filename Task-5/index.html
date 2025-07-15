@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SidMart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <img
+          src="productsImages/Images/SidMart-logo.jpg"
+          alt="SidMart Logo"
+          class="logo"
+        />
+        <div class="location">JioMart Clone</div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search JioMart" />
+          <button>🔍</button>
+        </div>
+        <div class="header-icons">
+          <span class="icon">☰</span>
+          <span class="icon" onclick="location.href='cart.html'">🛒</span>
+          <span class="icon" onclick="location.href='contact.html'">☎️</span>
+          <span class="icon" onclick="location.href='login.html'">Sign In</span>
+        </div>
+      </div>
+      <nav class="navbar">
+        <a href="Product/Fashion.html">Fashion</a>
+        <a href="Product/Books & Stationery.html">Books & Stationery</a>
+        <a href="Product/groceries.html">Groceries</a>
+        <a href="Product/Electronics.html">Electronics</a>
+        <a href="Product/Beauty & Personal Care.html">Beauty & Personal Care</a>
+        <a href="Product/Home & Kitchen.html">Home & Kitchen</a>
+        <a href="Product/Toys & Games.html">Toys & Games</a>
+        <a href="Product/All Categories.html">All Categories</a>
+      </nav>
+    </header>
+
+    <section class="slider">
+      <div class="slides">
+        <img src="productsImages/Images/Slide1.jpg" alt="Slide 1" />
+        <img src="productsImages/Images/Slide2.jpg" alt="Slide 2" />
+        <img src="productsImages/Images/Slide3.jpg" alt="Slide 3" />
+        <img src="productsImages/Images/Slide4.jpg" alt="Slide 4" />
+        <img src="productsImages/Images/Slide5.jpg" alt="Slide 5" />
+        <img src="productsImages/Images/Slide6.jpg" alt="Slide 6" />
+        <img src="productsImages/Images/Slide7.jpg" alt="Slide 7" />
+        <img src="productsImages/Images/Slide8.jpg" alt="Slide 8" />
+      </div>
+    </section>
+
+    <section class="deal-banner">
+      <img
+        src="productsImages/Images/Unmissable Deals2.jpg"
+        alt="Unmissable Deals2"
+      />
+    </section>
+
+    <section class="offers">
+      <div class="offer-card">
+        <img src="productsImages/Images/Offers1.jpg" alt="T-Shirts" />
+        <button
+          onclick="addToCart('T-Shirts',199, 'productsImages/Images/Offers1.jpg')"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="offer-card">
+        <img src="productsImages/Images/Offers2.jpg" alt="Mobiles" />
+        <button
+          onclick="addToCart('Mobiles',5899, 'productsImages/Images/Offers2.jpg')"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="offer-card">
+        <img
+          src="productsImages/Images/Offers5.jpg"
+          alt="Grocery Suooer Saver"
+        />
+        <button
+          onclick="addToCart('Grocery Suooer Saver',499, 'productsImages/Images/Offers5.jpg')"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </section>
+    <section class="offers">
+      <div class="offer-card">
+        <img src="productsImages/Images/Offers3.jpg" alt="Bags" />
+        <button
+          onclick="addToCart('Bags',999, 'productsImages/Images/Offers3.jpg')"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="offer-card">
+        <img src="productsImages/Images/Offers6.jpg" alt="Mobiles" />
+        <button
+          onclick="addToCart('Mobiles',16999, 'productsImages/Images/Offers6.jpg')"
+        >
+          Add to Cart
+        </button>
+      </div>
+      <div class="offer-card">
+        <img src="productsImages/Images/Offers4.jpg" alt="Laptop" />
+        <button
+          onclick="addToCart('Laptop',14999, 'productsImages/Images/Offers4.jpg')"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </section>
+
+    <section class="deal-banner">
+      <img
+        src="productsImages/Images/Unmissable Deals.jpg"
+        alt="Unmissable Deals"
+      />
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>All Categories</h3>
+          <ul>
+            <li>Grocery</li>
+            <li>Electronics</li>
+            <li>Fashion</li>
+            <li>Home & Lifestyle</li>
+            <li>Premium Fruits</li>
+            <li>Books</li>
+            <li>Furniture</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Popular Categories</h3>
+          <ul>
+            <li>Biscuits, Drinks & Packaged Foods</li>
+            <li>Fruits & Vegetables</li>
+            <li>Cooking Essentials</li>
+            <li>Dairy & Bakery</li>
+            <li>Personal Care</li>
+            <li>Beauty</li>
+            <li>Home</li>
+            <li>Mom & Baby Care</li>
+            <li>School, Office & Stationery</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Customer Account</h3>
+          <ul>
+            <li>My Account</li>
+            <li>My Orders</li>
+            <li>Wishlist</li>
+            <li>Delivery Addresses</li>
+            <li>JioMart Wallet</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Help & Support</h3>
+          <ul>
+            <li>About Us</li>
+            <li>FAQ</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>E-waste Policy</li>
+            <li>Cancellation & Return Policy</li>
+            <li>Shipping & Delivery Policy</li>
+            <li>AC Installation by resQ</li>
+          </ul>
+        </div>
+        <div class="footer-column contact-column">
+          <h3>Contact Us</h3>
+          <p>
+            WhatsApp us: <a href="#">70003 70003</a><br />
+            Call us: <a href="#">1800 890 1222</a><br />
+            8:00 AM to 8:00 PM, 365 days
+          </p>
+          <p>
+            Should you encounter any bugs, glitches, lack of functionality,
+            delayed deliveries, billing errors or other problems on the website.
+          </p>
+          <h3>Download the app</h3>
+          <div class="app-buttons">
+            <img
+              src="productsImages/Images/google-play-icon.jpg"
+              alt="Google Play"
+            />
+            <img src="productsImages/Images/ios_app_icon.jpg" alt="App Store" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 SidMart (JioMart Clone). All rights reserved. Reliance Retail
+          Ltd.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

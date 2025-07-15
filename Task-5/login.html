@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SidMart - Login / My Account</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="cart-header">
+      <h2 id="loginTitle">Login to SidMart</h2>
+      <p id="loginSubtitle">Welcome back! Please log in to continue.</p>
+    </header>
+
+    <section class="contact-section">
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Your Email" required />
+        <input
+          type="password"
+          id="password"
+          placeholder="Your Password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+
+      <div id="accountSection" style="display: none">
+        <h3>Welcome, <span id="userEmail"></span> 👋</h3>
+        <button id="logoutBtn">Logout</button>
+      </div>
+
+      <p id="loginSuccess" class="success-message" style="display: none">
+        ✅ Login successful!
+      </p>
+      <a href="index.html" class="return-home-btn">← Return to Home</a>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const loginForm = document.getElementById("loginForm");
+        const accountSection = document.getElementById("accountSection");
+        const loginTitle = document.getElementById("loginTitle");
+        const loginSubtitle = document.getElementById("loginSubtitle");
+        const loginSuccess = document.getElementById("loginSuccess");
+        const userEmailSpan = document.getElementById("userEmail");
+        const logoutBtn = document.getElementById("logoutBtn");
+
+        const user = localStorage.getItem("sidmart_user");
+
+        function showAccount(email) {
+          loginForm.style.display = "none";
+          accountSection.style.display = "block";
+          loginTitle.textContent = "My Account";
+          loginSubtitle.textContent = "You are logged in.";
+          userEmailSpan.textContent = email;
+        }
+
+        function showLogin() {
+          loginForm.style.display = "block";
+          accountSection.style.display = "none";
+          loginTitle.textContent = "Login to SidMart";
+          loginSubtitle.textContent =
+            "Welcome back! Please log in to continue.";
+          userEmailSpan.textContent = "";
+        }
+
+        if (user) {
+          showAccount(user);
+        } else {
+          showLogin();
+        }
+
+        if (loginForm) {
+          loginForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (email && password) {
+              localStorage.setItem("sidmart_user", email);
+              loginSuccess.style.display = "block";
+
+              setTimeout(() => {
+                showAccount(email);
+                loginSuccess.style.display = "none";
+              }, 1000);
+            }
+          });
+        }
+
+        if (logoutBtn) {
+          logoutBtn.addEventListener("click", () => {
+            localStorage.removeItem("sidmart_user");
+            showLogin();
+          });
+        }
+      });
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

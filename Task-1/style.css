@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #eef6f8;
+  color: #111;
+}
+
+.top-bar {
+  background: #0a3d3d;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  font-size: 0.9rem;
+}
+.top-bar .social-icons i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+.logo img {
+  height: 60px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: #073636;
+  font-weight: 600;
+}
+
+.hero {
+  background: linear-gradient(to right, #003c4d, #001d33);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: left;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+.hero p {
+  margin-top: 1rem;
+  max-width: 800px;
+}
+
+.btn {
+  background: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta {
+  display: inline-block;
+  background: #00796b;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+footer {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00796b;
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p, .about p {
+    padding-inline: 1rem;
+  }
+}

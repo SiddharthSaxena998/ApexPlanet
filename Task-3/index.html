@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartQuiz+ with Advice API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="quiz-section">
+        <h1 class="quiz-title">🔥 SmartQuiz+</h1>
+        <div class="quiz-box">
+          <div id="question" class="question">Loading question...</div>
+          <div id="options" class="options"></div>
+          <button onclick="nextQuestion()" class="next-btn">Next ➡️</button>
+          <div class="progress-bar">
+            <div id="progress-fill" class="progress-fill"></div>
+          </div>
+          <p id="score" class="score-text">Score: 0</p>
+        </div>
+      </section>
+
+      <section class="advice-section">
+        <h2 class="advice-title">💡 Daily Advice</h2>
+        <div class="advice-box">
+          <p id="advice-text">Loading advice...</p>
+          <button id="new-advice-btn" class="advice-btn">Get New Advice</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

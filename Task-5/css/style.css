@@ -1,0 +1,598 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f3f3f3;
+}
+
+.header {
+  background-color: rgb(12, 80, 144);
+  color: #fff;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+  display: flex;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  background-color: orange;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.header-icons .icon {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  overflow-x: auto;
+  background-color: #004b9a;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .new {
+  background-color: green;
+  color: white;
+  font-size: 10px;
+  padding: 2px 4px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+
+.slider {
+  overflow: hidden;
+  max-height: 300px;
+}
+
+.slides {
+  padding-top: 20px;
+  display: flex;
+  display: flex;
+  gap: 20px;
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.offers {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: white;
+}
+
+.offer-card {
+  width: 30%;
+  background-color: #e3f2fd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.offer-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.offer-card button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff3f6c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.deal-banner img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+  /* padding: 40px 20px 20px; */
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 180px;
+  min-width: 180px;
+}
+
+.footer-column h3 {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  text-decoration: underline;
+}
+
+.contact-column p {
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+.contact-column a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-column a:hover {
+  text-decoration: underline;
+}
+
+.app-buttons img {
+  width: 130px;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -20px;
+  color: #eee;
+  background-color: #004b9a;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #0078d4;
+  color: #fff;
+  padding: 15px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.grocery-header {
+  background: linear-gradient(120deg, #fdbb2d, #22c1c3);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.grocery-header .page-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.grocery-header p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 40px 30px;
+}
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-quantity button {
+  width: 35px;
+  height: 35px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.item-quantity button:hover {
+  background-color: #0078ad;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 120, 173, 0.3);
+}
+
+.item-quantity span {
+  font-size: 18px;
+  width: 30px;
+  text-align: center;
+}
+
+.cart-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.cart-item img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.item-details h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #222;
+}
+
+.item-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.cart-summary {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+#place-order {
+  background-color: #005eb8;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 17px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.2s;
+}
+
+#order-confirmation h2 {
+  font-size: 22px;
+  color: #0078ad;
+}
+
+.cart-header {
+  text-align: center;
+  padding: 25px 10px;
+  background: #0078ad;
+  color: white;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+
+#order-confirmation {
+  text-align: center;
+  margin-top: 40px;
+  display: none;
+}
+
+#order-confirmation img {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#order-confirmation h2 {
+  font-size: 22px;
+  color: #0078ad;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+.product-card .original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 8px;
+  font-weight: normal;
+}
+
+.product-card button {
+  margin-top: 12px;
+  background-color: #0078d4;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.product-card button:hover {
+  background-color: #005ea6;
+}
+
+footer {
+  background-color: #004b9a;
+  color: #eee;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.contact-section {
+  max-width: 520px;
+  margin: 80px auto;
+  padding: 40px 35px;
+  background: linear-gradient(135deg, #e6f0ff 0%, #ffffff 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 94, 184, 0.2);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 94, 184, 0.35);
+}
+
+.contact-section h2 {
+  color: #003e7e;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 2.1rem;
+  letter-spacing: 1.4px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section p {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 10px rgba(0, 94, 184, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
+  resize: none;
+  color: #003e7e;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.contact-section form input::placeholder,
+.contact-section form textarea::placeholder {
+  color: #6c7a9b;
+  font-style: italic;
+}
+
+.contact-section form input:focus,
+.contact-section form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px 3px rgba(0, 94, 184, 0.35);
+  border-color: #005eb8;
+  color: #003e7e;
+}
+
+.contact-section button {
+  background: linear-gradient(45deg, #005eb8, #0073e6);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.15rem;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(0, 94, 184, 0.5);
+  transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.2s ease;
+}
+
+.contact-section button:hover {
+  background: linear-gradient(45deg, #0073e6, #005eb8);
+  box-shadow: 0 8px 20px rgba(0, 115, 230, 0.7);
+  transform: scale(1.05);
+}
+
+.success-message {
+  color: #00cc66;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  text-align: center;
+  animation: fadeInScale 0.5s ease forwards;
+  opacity: 0;
+}
+
+.success-message.show {
+  opacity: 1;
+}
+
+.return-home-btn {
+  display: inline-block;
+  margin-top: 30px;
+  color: white;
+  background-color: #005eb8;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 94, 184, 0.5);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.return-home-btn:hover {
+  background-color: #003e7e;
+  transform: scale(1.05);
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

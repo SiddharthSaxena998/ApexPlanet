@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-Do + Contact App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="nav-bar">
+      <ul>
+        <li><button data-section="contact" class="nav-btn active">Contact</button></li>
+        <li><button data-section="todo" class="nav-btn">To-Do List</button></li>
+      </ul>
+      <button id="toggleTheme" aria-label="Toggle dark/light mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact" class="section active" aria-label="Contact Form">
+      <h1>Contact Us</h1>
+      <form id="contactForm" novalidate>
+        <label for="name">Name<span>*</span></label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="email">Email<span>*</span></label>
+        <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+        <label for="message">Message<span>*</span></label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="formMsg" role="alert" aria-live="polite"></div>
+    </section>
+
+    <section id="todo" class="section" aria-label="To-Do List">
+      <h1>My To-Do List</h1>
+
+      <div class="task-category">
+        <button id="all" class="category-btn active">All Tasks</button>
+        <button id="important" class="category-btn">Important</button>
+        <button id="planned" class="category-btn">Planned</button>
+        <button id="assigned" class="category-btn">Assigned To Me</button>
+      </div>
+
+      <form id="todoForm">
+        <input type="text" id="todoInput" placeholder="Add a new task" aria-label="Add a task" required />
+        <button type="submit">+</button>
+      </form>
+
+      <ul id="todoList" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
